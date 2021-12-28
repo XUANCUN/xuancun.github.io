@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://xuancun.github.io">
-  <title>log4j | lion&#39;s blog</title>
+  <title>log4j2漏洞复现(CVE-2021-44228) | lion&#39;s blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="log4j2漏洞复现(CVE-2021-44228)  漏洞简介：log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。  影响版本：Apache Log4j 2.x &gt;&#x3D;2.0-beta9 且 &lt; 2.15.0">
+  <meta name="description" content="漏洞简介：log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。  影响版本：Apache Log4j 2.x &gt;&#x3D;2.0-beta9 且 &lt; 2.15.0">
 <meta property="og:type" content="article">
-<meta property="og:title" content="log4j">
+<meta property="og:title" content="log4j2漏洞复现(CVE-2021-44228)">
 <meta property="og:url" content="https://xuancun.github.io/2021/12/29/log4j/index.html">
 <meta property="og:site_name" content="lion&#39;s blog">
-<meta property="og:description" content="log4j2漏洞复现(CVE-2021-44228)  漏洞简介：log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。  影响版本：Apache Log4j 2.x &gt;&#x3D;2.0-beta9 且 &lt; 2.15.0">
+<meta property="og:description" content="漏洞简介：log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。  影响版本：Apache Log4j 2.x &gt;&#x3D;2.0-beta9 且 &lt; 2.15.0">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s4.ax1x.com/2021/12/28/TyzwUx.png">
 <meta property="og:image" content="https://s4.ax1x.com/2021/12/28/Tyz056.png">
@@ -42,7 +42,7 @@
 <meta property="og:image" content="https://s4.ax1x.com/2021/12/29/T6Kv24.png">
 <meta property="og:image" content="https://s4.ax1x.com/2021/12/29/T6KqaV.png">
 <meta property="article:published_time" content="2021-12-28T17:01:28.000Z">
-<meta property="article:modified_time" content="2021-12-28T17:17:07.257Z">
+<meta property="article:modified_time" content="2021-12-28T17:20:04.920Z">
 <meta property="article:author" content="lion">
 <meta property="article:tag" content="Ctf">
 <meta property="article:tag" content="CVE">
@@ -245,7 +245,7 @@
   
   
     <h1 class="article-title" itemprop="name">
-      log4j
+      log4j2漏洞复现(CVE-2021-44228)
     </h1>
   
 
@@ -271,7 +271,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">772字</span>
+      <span class="post-count">764字</span>
     </span>
   </span>
 
@@ -291,9 +291,7 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="log4j2漏洞复现-CVE-2021-44228"><a href="#log4j2漏洞复现-CVE-2021-44228" class="headerlink" title="log4j2漏洞复现(CVE-2021-44228)"></a>log4j2漏洞复现(CVE-2021-44228)</h1><hr>
-<hr>
-<h2 id="漏洞简介："><a href="#漏洞简介：" class="headerlink" title="漏洞简介："></a>漏洞简介：</h2><p>log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。</p>
+    <h2 id="漏洞简介："><a href="#漏洞简介：" class="headerlink" title="漏洞简介："></a>漏洞简介：</h2><p>log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。</p>
 <hr>
 <h2 id="影响版本："><a href="#影响版本：" class="headerlink" title="影响版本："></a>影响版本：</h2><p>Apache Log4j 2.x &gt;=2.0-beta9 且 &lt; 2.15.0</p>
 <hr>
@@ -432,7 +430,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://xuancun.github.io/2021/12/29/log4j/" title="log4j" target="_blank">https://xuancun.github.io/2021/12/29/log4j/</a>
+          <a href="https://xuancun.github.io/2021/12/29/log4j/" title="log4j2漏洞复现(CVE-2021-44228)" target="_blank">https://xuancun.github.io/2021/12/29/log4j/</a>
         </li>
         
         <li>
