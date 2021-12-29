@@ -10,12 +10,12 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="漏洞简介：log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。  影响版本：Apache Log4j 2.x &gt;&#x3D;2.0-beta9 且 &lt; 2.15.0">
+  <meta name="description" content="漏洞简介：log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="log4j2漏洞复现(CVE-2021-44228)">
 <meta property="og:url" content="https://xuancun.github.io/2021/12/29/log4j/index.html">
 <meta property="og:site_name" content="lion&#39;s blog">
-<meta property="og:description" content="漏洞简介：log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。  影响版本：Apache Log4j 2.x &gt;&#x3D;2.0-beta9 且 &lt; 2.15.0">
+<meta property="og:description" content="漏洞简介：log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s4.ax1x.com/2021/12/28/TyzwUx.png">
 <meta property="og:image" content="https://s4.ax1x.com/2021/12/28/Tyz056.png">
@@ -45,7 +45,7 @@
 <meta property="og:image" content="https://s4.ax1x.com/2021/12/29/Tc856O.png">
 <meta property="og:image" content="https://s4.ax1x.com/2021/12/29/Tc841K.png">
 <meta property="article:published_time" content="2021-12-28T17:01:28.000Z">
-<meta property="article:modified_time" content="2021-12-29T06:46:56.412Z">
+<meta property="article:modified_time" content="2021-12-29T07:04:17.280Z">
 <meta property="article:author" content="lion">
 <meta property="article:tag" content="Ctf">
 <meta property="article:tag" content="CVE">
@@ -295,10 +295,10 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h2 id="漏洞简介："><a href="#漏洞简介：" class="headerlink" title="漏洞简介："></a>漏洞简介：</h2><p>log4j是Apache公司的一款JAVA日志框架，基本上只要是java的框架都会用到这个log4j框架，所以上周不管是不是IT圈的都几乎被刷屏了，可见这个洞的危害之大，波及范围之广。所以复现一下。</p>
+<span id="more"></span>
 <hr>
 <h2 id="影响版本："><a href="#影响版本：" class="headerlink" title="影响版本："></a>影响版本：</h2><p>Apache Log4j 2.x &gt;=2.0-beta9 且 &lt; 2.15.0</p>
 <hr>
-<span id="more"></span>
 <h3 id="复现环境1："><a href="#复现环境1：" class="headerlink" title="复现环境1："></a>复现环境1：</h3><p>1.log4shell-vulnerable-app环境:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name vulnerable-app --rm -p 8080:8080 ghcr.io/christophetd/log4shell-vulnerable-app</span><br></pre></td></tr></table></figure>
 
