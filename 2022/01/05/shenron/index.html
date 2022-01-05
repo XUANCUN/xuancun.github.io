@@ -6,17 +6,48 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://xuancun.github.io">
-  <title>Tag: CVE | lion&#39;s blog</title>
+  <title>Vulnhub-shenron-1通关笔记 | lion&#39;s blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="lion&#39;s blog">
-<meta property="og:url" content="https://xuancun.github.io/tags/CVE/index.html">
+  <meta name="description" content="nmap扫描端口：1nmap 192.168.0.19 -p-">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vulnhub-shenron-1通关笔记">
+<meta property="og:url" content="https://xuancun.github.io/2022/01/05/shenron/index.html">
 <meta property="og:site_name" content="lion&#39;s blog">
+<meta property="og:description" content="nmap扫描端口：1nmap 192.168.0.19 -p-">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjpPr6.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/Tjppx1.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjpkVO.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjpZPH.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjpeGd.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjpS2R.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjSxPJ.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjpnxI.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/Tjpds0.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjpDdU.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjproF.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/Tjpyi4.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/Tjp6JJ.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjerGV.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjpWsx.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/Tjm1eJ.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjuSKS.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjubsU.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjMe74.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjQ9bD.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjMfCn.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjQE8I.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjQmKf.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/05/TjQl5j.png">
+<meta property="article:published_time" content="2022-01-05T08:50:08.000Z">
+<meta property="article:modified_time" content="2022-01-05T08:54:21.910Z">
 <meta property="article:author" content="lion">
+<meta property="article:tag" content="Ctf">
+<meta property="article:tag" content="Vulnhub">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s4.ax1x.com/2022/01/05/TjpPr6.png">
   
     <link rel="alternative" href="/atom.xml" title="lion&#39;s blog" type="application/atom+xml">
   
@@ -207,41 +238,202 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-shenron" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/12/29/log4j/" class="archive-article-date">
-        <time datetime="2021-12-28T17:01:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-29</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/12/29/log4j/" target="_blank">log4j2漏洞复现(CVE-2021-44228)</a>
   
+    <h1 class="article-title" itemprop="name">
+      Vulnhub-shenron-1通关笔记
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2022/01/05/shenron/" class="archive-article-date">
+        <time datetime="2022-01-05T08:50:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-05</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">451字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="nmap扫描端口："><a href="#nmap扫描端口：" class="headerlink" title="nmap扫描端口："></a>nmap扫描端口：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap 192.168.0.19 -p-</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/TjpPr6.png" alt="https://s4.ax1x.com/2022/01/05/TjpPr6.png"></p>
+<aside>
+💡 开放80端口和22端口
+
+</aside>
+
+<p>web浏览器打开80端口:</p>
+<p><img src="https://s4.ax1x.com/2022/01/05/Tjppx1.png" alt="https://s4.ax1x.com/2022/01/05/Tjppx1.png"></p>
+<aside>
+💡 Apache服务的默认页面
+
+</aside>
+
+<p>web扫描器识别到是joomla框架：</p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjpkVO.png" alt="https://s4.ax1x.com/2022/01/05/TjpkVO.png"></p>
+<h3 id="gobuster扫描joomla后台路径："><a href="#gobuster扫描joomla后台路径：" class="headerlink" title="gobuster扫描joomla后台路径："></a>gobuster扫描joomla后台路径：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gobuster.exe  dir -u http://192.168.0.19/joomla/ -w dir.txt</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/TjpZPH.png" alt="https://s4.ax1x.com/2022/01/05/TjpZPH.png"></p>
+<aside>
+💡 后台路径是joomla/administrator/index.php
+
+</aside>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/TjpeGd.png" alt="https://s4.ax1x.com/2022/01/05/TjpeGd.png"></p>
+<p>登录名和密码在/test/password文件的源码中:</p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjpS2R.png" alt="https://s4.ax1x.com/2022/01/05/TjpS2R.png"></p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjSxPJ.png" alt="https://s4.ax1x.com/2022/01/05/TjSxPJ.png"></p>
+<p>管理员是admin，密码是3iqtzi4RhkWANcu@$pa$$</p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjpnxI.png" alt="https://s4.ax1x.com/2022/01/05/TjpnxI.png"></p>
+<aside>
+💡 管理员登录ok
+
+</aside>
+
+<h3 id="编辑模板文件上传shell："><a href="#编辑模板文件上传shell：" class="headerlink" title="编辑模板文件上传shell："></a>编辑模板文件上传shell：</h3><p><img src="https://s4.ax1x.com/2022/01/05/Tjpds0.png" alt="https://s4.ax1x.com/2022/01/05/Tjpds0.png"></p>
+<aside>
+💡 编辑完模板文件然后要点击copy template，取个名字就可以保存成功了。
+
+</aside>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/TjpDdU.png" alt="https://s4.ax1x.com/2022/01/05/TjpDdU.png"></p>
+<p>在error.php中插入shell，这样访问出现错误时，就会自动访问到error.php文件，就可以反弹。</p>
+<h3 id="提权："><a href="#提权：" class="headerlink" title="提权："></a>提权：</h3><p>nc监听端口：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc.exe -lvvp 1234</span><br></pre></td></tr></table></figure>
+
+<p>访问错误地址反弹nc：</p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjproF.png" alt="https://s4.ax1x.com/2022/01/05/TjproF.png"></p>
+<p><img src="https://s4.ax1x.com/2022/01/05/Tjpyi4.png" alt="https://s4.ax1x.com/2022/01/05/Tjpyi4.png"></p>
+<aside>
+💡 反弹成功
+
+</aside>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/Tjp6JJ.png" alt="https://s4.ax1x.com/2022/01/05/Tjp6JJ.png"></p>
+<p>登录用户是www-data。存在另外两个用户一个是shenron，另一个用户是jenny。</p>
+<p>在/var/www/html/joomla/configuration.php存在jenny的密码：</p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjerGV.png" alt="https://s4.ax1x.com/2022/01/05/TjerGV.png"></p>
+<aside>
+💡 jenny的密码是Mypa$$wordi$notharD@123
+
+</aside>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/TjpWsx.png" alt="https://s4.ax1x.com/2022/01/05/TjpWsx.png"></p>
+<p><img src="https://s4.ax1x.com/2022/01/05/Tjm1eJ.png" alt="https://s4.ax1x.com/2022/01/05/Tjm1eJ.png"></p>
+<p>通过把ssh公钥写入jenny目录下的.ssh文件夹下的authorized_keys中，就可以用私钥登录到jenny。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> .ssh</span><br><span class="line"><span class="built_in">echo</span> __public key__ &gt;&gt; authorized_keys</span><br><span class="line"><span class="built_in">echo</span> ssh-rsa <span class="string">&quot;生成的公钥串&quot;</span> &gt;&gt; authorized_keys</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/TjuSKS.png" alt="https://s4.ax1x.com/2022/01/05/TjuSKS.png"></p>
+<aside>
+💡 使用公钥文件登录
+
+</aside>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/TjubsU.png" alt="https://s4.ax1x.com/2022/01/05/TjubsU.png"></p>
+<aside>
+💡 jenny登录成功，sudo -l 查看提权命令，jenny可以使用shenron的身份使用cp命令
+
+</aside>
+
+<p>使用shenron的cp命令替换.ssh文件夹下的authorized_keys，替换成jenny的公钥，这样就可以用jenny的私钥登录到shenron用户。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp /home/jenny/.ssh/authorized_keys /tmp/  <span class="comment">#复制jenny的authorized_keys文件到/tmp/两个用户都可以读取</span></span><br><span class="line">sudo -u shenron cp /tmp/authorized_keys /home/shenron/.ssh/</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/TjMe74.png" alt="https://s4.ax1x.com/2022/01/05/TjMe74.png"></p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjQ9bD.png" alt="https://s4.ax1x.com/2022/01/05/TjQ9bD.png"></p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjMfCn.png" alt="https://s4.ax1x.com/2022/01/05/TjMfCn.png"></p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjQE8I.png" alt="https://s4.ax1x.com/2022/01/05/TjQE8I.png"></p>
+<aside>
+💡 shenron用户的密码在/var/opt/password.txt
+
+</aside>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update -o APT::Update::Pre-Invoke::=/bin/sh <span class="comment">#使用apt命令提权</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s4.ax1x.com/2022/01/05/TjQmKf.png" alt="https://s4.ax1x.com/2022/01/05/TjQmKf.png"></p>
+<p><img src="https://s4.ax1x.com/2022/01/05/TjQl5j.png" alt="https://s4.ax1x.com/2022/01/05/TjQl5j.png"></p>
+<aside>
+💡 Your Root Flag Is Here :- aa087b2d466cd593622798c8e972bffb
+
+</aside>
+
+<p>下载地址：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.vulnhub.com/entry/shenron-1,630/">https://www.vulnhub.com/entry/shenron-1,630/</a></p>
+</blockquote>
+<p>ctf提权辅助工具：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/BRU1S3R/linpeas.sh.git">https://github.com/BRU1S3R/linpeas.sh.git</a></p>
+</blockquote>
+
+    
+
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          lion
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://xuancun.github.io/2022/01/05/shenron/" title="Vulnhub-shenron-1通关笔记" target="_blank">https://xuancun.github.io/2022/01/05/shenron/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -251,25 +443,134 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CVE</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Vulnhub</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://xuancun.github.io/2022/01/05/shenron/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2022/01/03/driftingblues7/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Vulnhub-driftingblues:7通关笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname =
+    'true'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</section>
+
+
+
+
+
+
 
 
           </div>
@@ -310,9 +611,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
